@@ -1,29 +1,5 @@
-<h1>Welcome to App Component</h1>
-<!-- Interpolation and Property Binding -->
-<img src="{{imgURL}}" [style]="style">
-<br>
-<span>
-  Selling Price = {{sellingPrice}}, Profit Rate = {{sellingPrice | profitrate: price}}
-</span>
+<app-navbar></app-navbar>
 
-<p>
-  Date = {{today | date:'yyyy-MMM-dd:hh:mm:ss'}} <br> 
-  Rate = {{rate | percent}}
-</p>
-<hr>
+<app-home></app-home>
 
-<button type="button" [attr.id]="buttonTitle">Submit</button>
-
-<p [class]="multipleclasses">A paragraph to test class and style binding</p>
-
-<button (click)="NewTime()">Get New Date</button>
-<br><br><br>
-<input #inputcolor placeholder="Enter your desired color">
-<button (click)="SetColor(inputcolor.value)">Set Color</button>
-<p [style.color]="color">Changing text color by template variable transfered from view to ts component then from ts component to view.</p>
-
-<br><br><br><br>
-<input [(ngModel)]="fullName">
-<p>{{fullName}}</p>
-
-<app-details></app-details>
+<app-footer></app-footer>
