@@ -1,6 +1,86 @@
-<p>details works!</p>
-<!-- Interpolation (one-way data binding from a typescript class to a view) -->
-<h1>Hello Mr. {{myName}}</h1>
-<app-details-movies></app-details-movies>
+<h1>Movie Title</h1>
 <br>
-<app-details-reviews></app-details-reviews>
+
+<div class="row">
+    <div class="col-md-6">
+        <iframe 
+        width="560" height="315" 
+        src="https://www.youtube.com/embed/0fUCuvNlOCg?si=4r3PRCTMYFq2dE35&autoplay=0" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+    </div>
+    <div class="col-md-6">
+        <p class="lead">This is going to be a placeholder for movie plot.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Stars</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Star 1 name</li>
+                        <li class="list-group-item">Star 2 name</li>
+                        <li class="list-group-item">Star 3 name</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Directors</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Director 1 name</li>
+                        <li class="list-group-item">Director 2 name</li>
+                        <li class="list-group-item">Director 3 name</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Genres</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Genres 1 name</li>
+                        <li class="list-group-item">Genres 2 name</li>
+                        <li class="list-group-item">Genres 3 name</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<br>
+<div class="row">
+    <h1>Actors</h1>
+    <div class="col-md-12 text-center">
+        <app-details-actors></app-details-actors>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-warning">View All Actors</a>
+    </div>
+</div>
+<hr>
+<br>
+
+<div class="row">
+    <h1>Reviews</h1>
+    <div class="col-md-12 text-center">
+        <app-details-reviews></app-details-reviews>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-warning">View All Reviews</a>
+    </div>
+</div>
+<hr>
+<br>
+<!-- Interpolation (one-way data binding from a typescript class to a view) -->
+<!-- <h1>Hello Mr. {{myName}}</h1> -->
+<div class="row">
+    <h1>Similar Movies</h1>
+    <div class="col-md-12 text-center">
+        <app-details-movies></app-details-movies>
+    </div>
+    <div class="text-center">
+        <a class="btn btn-warning">View All Movies</a>
+    </div>
+</div>

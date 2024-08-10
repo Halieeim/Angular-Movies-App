@@ -1,0 +1,5 @@
+.fan-fav-img-style {
+    width: 100%; /* or a specific pixel value */
+    height: 400px; /* specify a height */
+    object-fit: fill;
+}
