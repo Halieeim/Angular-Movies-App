@@ -1,1 +1,88 @@
-<p>search works!</p>
+<h1>Results for the {{movie_title}}</h1>
+<hr>
+
+<table class="table table-bordered border-primary table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cover</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYxnnMqQyMqz_sWOc-HIaB8QJu9ZeGd0ijnA&s" width="100">
+        </td>
+        <td>Movie 1 title</td>
+        <td>Short Description for this movie.</td>
+        <td>
+            <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-film"></i> 
+                Trailer
+            </a>
+            &nbsp;
+            <a href="" class="btn btn-primary"><i class="bi bi-eye"></i> Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>
+            <img src="" alt="">
+        </td>
+        <td>Movie 2 title</td>
+        <td>Short Description for this movie.</td>
+        <td>
+            <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-film"></i> 
+                Trailer
+            </a>
+            &nbsp;
+            <a href="" class="btn btn-primary"><i class="bi bi-eye"></i> Details</a>
+        </td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>
+            <img src="" alt="">
+        </td>
+        <td>Movie 3 title</td>
+        <td>Short Description for this movie.</td>
+        <td>
+            <a href="" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="bi bi-film"></i> 
+                Trailer
+            </a>
+            &nbsp;
+            <a href="" class="btn btn-primary"><i class="bi bi-eye"></i> Details</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <iframe 
+                width="100%" height="450"
+                src="https://www.youtube.com/embed/0fUCuvNlOCg?si=4r3PRCTMYFq2dE35&autoplay=0" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" 
+                allowfullscreen>
+            </iframe>
+        </div>
+        <div class="modal-footer justify-content-center">
+            <b>{{movie_title}}</b>
+        </div>
+      </div>
+    </div>
+  </div>
