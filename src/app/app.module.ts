@@ -17,6 +17,8 @@ import { ProfitPipe } from './components/pipes/profit.pipe';
 import { ProfitRatePipe } from './components/pipes/profitRate.pipe';
 import { FormsModule } from '@angular/forms';
 import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
+import { RouterModule } from '@angular/router';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +34,7 @@ import { DetailsActorsComponent } from './components/details-actors/details-acto
     LoaderComponent,
     ModalComponent,
     DetailsActorsComponent,
+    NotFoundComponent,
     
     // Pipes 
     ProfitPipe,

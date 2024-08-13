@@ -7,16 +7,16 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/"><i class="bi bi-house-door"></i> Home</a>
+            <a class="nav-link active" aria-current="page" routerLink="/"><i class="bi bi-house-door"></i> Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/"><i class="bi bi-chat-quote-fill"></i> Feedback</a>
+            <a class="nav-link" routerLink="/feedback"><i class="bi bi-chat-quote-fill"></i> Feedback</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-          <button class="btn btn-outline-primary" type="button">Log In</button>
+          <input #searchMovie class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit" routerLink="/search/{{searchMovie.value}}">Search</button>
+          <button class="btn btn-outline-primary" type="button" routerLink="/login">Log In</button>
         </form>
       </div>
     </div>
